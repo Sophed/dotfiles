@@ -9,6 +9,7 @@ hostname=$(hostnamectl hostname)
 kernel=$(uname -r)
 up=$(uptime -p)
 uptime=${up//\up /}
+uptime=${uptime//\ute/}
 shell=$(basename "$SHELL")
 packages=$(pacman -Q | wc -l)
 memory=$(free -h | awk '/^Mem:/ {print $3 " / " $2}')

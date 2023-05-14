@@ -29,4 +29,4 @@ source /home/soph/gitclones/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Spicetify
 export PATH=$PATH:$HOME/.spicetify
 
-fetch
+sh Scripts/fetch.sh
