@@ -1,0 +1,72 @@
+#! /bin/sh
+
+# Run sxhkd for keybinds
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+#[------------------------------]
+#[       Virtual Desktops       ]
+#[------------------------------]
+
+bspc monitor DP-2 -d 1 2 3 4
+bspc monitor HDMI-0 -d 5 6 7 8
+
+
+#[----------------------------]
+#[       Tiling Options       ]
+#[----------------------------]
+
+bspc config border_width         0
+#bspc config window_gap          10
+bspc config window_gap          0
+
+bspc config split_ratio          0.5
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config focus_follows_pointer true
+
+bspc config pointer_motion_interval          2
+
+
+#[----------------------------]
+#[       Border Colours       ]
+#[----------------------------]
+
+bspc config active_border_color \#595959
+bspc config normal_border_color \#595959
+bspc config focused_border_color \#33ccff
+
+#[----------------------------]
+#[       Theme Settings       ]
+#[----------------------------]
+
+gsettings set org.gnome.desktop.interface gtk-theme "Awesthetic-dark"
+gsettings set org.gnome.desktop.interface cursor-theme "Sweet-cursors" &
+gsettings set org.gnome.desktop.interface icon-theme "Vector-Maia-dark" &
+xsetroot -cursor_name left_ptr &
+
+# Java Applications Fix
+wmname LG3D
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+#[-----------------------]
+#[       Autostart       ]
+#[-----------------------]
+
+nitrogen --restore
+xinput --set-prop 11 'libinput Accel Profile Enabled' 0, 1
+xinput --set-prop 10 'libinput Accel Profile Enabled' 0, 1
+xinput --set-prop 9 'libinput Accel Profile Enabled' 0, 1
+
+# Disable Sleep
+xset -dpms &
+xset s off &
+
+polybar bsp-1 &
+polybar bsp-2 &
+ksuperkey &
+dunst &
+
+discord --enable-gpu-rasterization &
+spotify &
+picom &
+sh ~/Scripts/startup.sh
