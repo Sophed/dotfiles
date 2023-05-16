@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/soph/Drives/Mars/Wallpapers/archcraft-wallpapers/archcraft-backgrounds-extra/files/extra-15.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0a0b0f",
+        "foreground": "#e2e5e8",
+        "cursor": "#e2e5e8"
+    },
+    "colors": {
+        "color0": "#0a0b0f",
+        "color1": "#637589",
+        "color2": "#768799",
+        "color3": "#96A2B2",
+        "color4": "#B2BAC6",
+        "color5": "#BCC3CE",
+        "color6": "#C9CFD8",
+        "color7": "#e2e5e8",
+        "color8": "#9ea0a2",
+        "color9": "#637589",
+        "color10": "#768799",
+        "color11": "#96A2B2",
+        "color12": "#B2BAC6",
+        "color13": "#BCC3CE",
+        "color14": "#C9CFD8",
+        "color15": "#e2e5e8"
+    }
+}

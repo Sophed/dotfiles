@@ -30,3 +30,7 @@ source /home/soph/gitclones/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export PATH=$PATH:$HOME/.spicetify
 
 sh Scripts/fetch.sh
+
+# Pywal
+(cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors-tty.sh
