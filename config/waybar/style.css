@@ -1,0 +1,72 @@
+@import "palette.css";
+
+* {
+    font-family: Iosevka Nerd Font;
+    font-size: 14px;
+    font-weight: bold;    
+}
+
+window#waybar {
+    /*background-color: rgba(0,0,0,0);*/
+    background-color: @background;
+    /*border: 2px solid #89b482;*/
+    /*border-radius: 8px;*/
+    margin-left: 120px;
+}
+
+tooltip {
+    background-color: @background;
+    border: 2px solid;
+    border-color: @foreground;
+}
+
+tooltip label {
+    color: @foreground;
+}
+
+#custom-logo,
+#clock,
+#window,
+#workspaces,
+#workspaces button,
+#tray,
+#memory,
+#cpu,
+#custom-music,
+#custom-powermenu,
+#pulseaudio {
+    border-radius: 8px;
+    background-color: @background;
+    padding: 0 8px;
+    margin: 5px;
+    color: @foreground;
+}
+
+#custom-music,
+#memory,
+#cpu,
+#clock {
+    background-color: @background;
+    color: @foreground;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#custom-powermenu {
+    padding-left: 16px;
+    padding-right: 16px;
+	margin-right: 8px;
+	font-size: 20px;
+}
+
+#custom-logo {
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 17px;
+    margin-left: 8px;
+    margin-right: 4px;
+}
+
+#tray {
+    padding: 0 14px;
+}

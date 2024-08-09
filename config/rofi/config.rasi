@@ -83,7 +83,7 @@ configuration {
 
 	/*---------- Misc setting ----------*/
 	terminal: "rofi-sensible-terminal";
-	font: "Roboto Mono 12";
+	font: "Cartograph CF 12";
 	sort: false;
 	threads: 0;
 	click-to-exit: true;

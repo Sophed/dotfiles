@@ -15,4 +15,5 @@
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/black.rasi"
+/*@import "~/.config/rofi/colors/black.rasi"*/
+@import "~/.config/rofi/colors/everblush.rasi"
