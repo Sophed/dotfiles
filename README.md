@@ -1,5 +1,7 @@
 # Dotfiles
 
+> Looking for my old config? Find it [here](https://github.com/Sophed/dotfiles/tree/x11)
+
 - Colours: [Gruvbox Material](https://github.com/sainnhe/gruvbox-material)
 - Compositor: [Hyprland](https://hyprland.org/)
 - Bar: [Waybar](https://github.com/Alexays/Waybar)
