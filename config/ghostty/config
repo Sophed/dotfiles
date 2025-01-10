@@ -1,0 +1,13 @@
+gtk-single-instance = true
+theme = gruvbox-material
+font-family = Iosevka Custom
+font-size = 13
+
+cursor-style = bar
+cursor-color = #bbbbbb
+adjust-cursor-thickness = 1
+
+window-decoration = false
+window-padding-x = 20
+window-padding-y = 20
+background-opacity = 0.9
